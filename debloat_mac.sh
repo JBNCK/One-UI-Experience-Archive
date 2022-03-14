@@ -277,6 +277,9 @@ adb_mac/adb shell pm disable-user com.android.carrierdefaultapp
 adb_mac/adb shell pm uninstall --user 0 com.android.emergency
 adb_mac/adb shell pm uninstall --user 0 com.samsung.safetyinformation
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.hdmapp
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.notes
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.notes.addons
+adb_mac/adb shell pm uninstall --user 0 com.android.vending
 adb_mac/adb install apks/systemuituner.apk
 adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
 adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
@@ -284,8 +287,9 @@ adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.DUMP
 adb_mac/adb install apks/messages.apk
 adb_mac/adb install apks/accounts.apk
 adb_mac/adb install apks/keyboard.apk
-adb_mac/adb shell ime enable com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
-adb_mac/adb shell ime set com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+sleep 5
+adb_mac/adb shell ime enable org.dslul.openboard.inputmethod.latin/.LatinIME
+adb_mac/adb shell ime set org.dslul.openboard.inputmethod.latin/.LatinIME
 adb_mac/adb install apks/browser.apk
 adb_mac/adb install apks/store.apk
 adb_mac/adb install apks/dns.apk
@@ -298,4 +302,4 @@ adb_mac/adb shell settings put global animator_duration_scale 0.75
 adb_mac/adb install apks/weather.apk
 echo rebooting.
 adb_mac/adb reboot
-timeout 5
+sleep 5

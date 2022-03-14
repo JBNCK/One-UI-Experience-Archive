@@ -277,6 +277,9 @@ adb_lin/adb shell pm disable-user com.android.carrierdefaultapp
 adb_lin/adb shell pm uninstall --user 0 com.android.emergency
 adb_lin/adb shell pm uninstall --user 0 com.samsung.safetyinformation
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.hdmapp
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.notes
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.notes.addons
+adb_lin/adb shell pm uninstall --user 0 com.android.vending
 adb_lin/adb install apks/systemuituner.apk
 adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
 adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
@@ -284,8 +287,9 @@ adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.DUMP
 adb_lin/adb install apks/messages.apk
 adb_lin/adb install apks/accounts.apk
 adb_lin/adb install apks/keyboard.apk
-adb_lin/adb shell ime enable com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
-adb_lin/adb shell ime set com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+sleep 5
+adb_lin/adb shell ime enable org.dslul.openboard.inputmethod.latin/.LatinIME
+adb_lin/adb shell ime set org.dslul.openboard.inputmethod.latin/.LatinIME
 adb_lin/adb install apks/browser.apk
 adb_lin/adb install apks/store.apk
 adb_lin/adb install apks/dns.apk
@@ -298,4 +302,4 @@ adb_lin/adb shell settings put global animator_duration_scale 0.75
 adb_lin/adb install apks/weather.apk
 echo rebooting.
 adb_lin/adb reboot
-timeout 5
+sleep 5

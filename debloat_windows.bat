@@ -277,6 +277,9 @@ adb_win\adb.exe shell pm disable-user com.android.carrierdefaultapp
 adb_win\adb.exe shell pm uninstall --user 0 com.android.emergency
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.safetyinformation
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.hdmapp
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.notes
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.notes.addons
+adb_win\adb.exe shell pm uninstall --user 0 com.android.vending
 adb_win\adb.exe install apks\systemuituner.apk
 adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
 adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
@@ -284,8 +287,9 @@ adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.DU
 adb_win\adb.exe install apks\messages.apk
 adb_win\adb.exe install apks\accounts.apk
 adb_win\adb.exe install apks\keyboard.apk
-adb_win\adb.exe shell ime enable com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
-adb_win\adb.exe shell ime set com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME
+timeout 2
+adb_win\adb.exe shell ime enable org.dslul.openboard.inputmethod.latin/.LatinIME
+adb_win\adb.exe shell ime set org.dslul.openboard.inputmethod.latin/.LatinIME
 adb_win\adb.exe install apks\browser.apk
 adb_win\adb.exe install apks\store.apk
 adb_win\adb.exe install apks\dns.apk
