@@ -1,0 +1,305 @@
+@echo off
+echo Errors are normal, just ignore them
+echo -----------------------------------
+adb.exe shell pm uninstall --user 0 com.samsung.aasaservice
+adb.exe shell pm uninstall --user 0 com.google.android.setupwizard
+adb.exe shell pm uninstall --user 0 com.google.android.apps.restore
+adb.exe shell pm uninstall --user 0 android.auto_generated_rro_product__
+adb.exe shell pm uninstall --user 0 android.auto_generated_rro_vendor__
+adb.exe shell pm uninstall --user 0 com.android.egg
+adb.exe shell pm uninstall --user 0 com.google.android.configupdater
+adb.exe shell pm uninstall --user 0 com.dsi.ant.sample.acquirechannels
+adb.exe shell pm uninstall --user 0 com.dsi.ant.plugins.antplus
+adb.exe shell pm uninstall --user 0 com.dsi.ant.service.socket
+adb.exe shell pm uninstall --user 0 com.samsung.android.mapsagent
+adb.exe shell pm uninstall --user 0 com.samsung.android.ardrawing
+adb.exe shell pm uninstall --user 0 com.samsung.android.arzone
+adb.exe shell pm uninstall --user 0 com.google.ar.zone
+adb.exe shell pm uninstall --user 0 com.samsung.android.spdfnote
+adb.exe shell pm uninstall --user 0 com.android.internal.display.cutout.emulation.hole
+adb.exe shell pm uninstall --user 0 com.android.internal.display.cutout.emulation.corner
+adb.exe shell pm uninstall --user 0 com.sec.android.autodoodle.service
+adb.exe shell pm uninstall --user 0 com.android.dreams.basic
+adb.exe shell pm uninstall --user 0 com.sec.android.widgetapp.webmanual
+adb.exe shell pm uninstall --user 0 com.samsung.android.motionphoto.viewer
+adb.exe shell pm uninstall --user 0 com.samsung.android.visionintelligence
+adb.exe shell pm uninstall --user 0 com.samsung.android.bixbyvision.framework
+adb.exe shell pm uninstall --user 0 com.android.calllogbackup
+adb.exe shell pm uninstall --user 0 com.sec.factory.cameralyzer
+adb.exe shell pm uninstall --user 0 com.android.chrome
+adb.exe shell pm uninstall --user 0 com.sec.android.app.chromecustomizations
+adb.exe shell pm uninstall --user 0 com.android.theme.color.cinnamon
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.circular.themepicker
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.circular.launcher
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.filled.themepicker
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.filled.launcher
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.filled.android
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.filled.systemui
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.filled.settings
+adb.exe shell pm uninstall --user 0 com.android.backupconfirm
+adb.exe shell pm uninstall --user 0 com.android.providers.partnerbookmarks
+adb.exe shell pm uninstall --user 0 com.android.sharedstoragebackup
+adb.exe shell pm uninstall --user 0 com.google.android.overlay.gmsconfig.gsa
+adb.exe shell pm uninstall --user 0 com.google.android.overlay.gmsconfig.common
+adb.exe shell pm uninstall --user 0 com.google.android.overlay.gmsconfig.photos
+adb.exe shell pm uninstall --user 0 com.google.android.overlay.modules.cellbroadcastservice
+adb.exe shell pm uninstall --user 0 com.google.android.overlay.modules.cellbroadcastreceiver
+adb.exe shell pm uninstall --user 0 com.samsung.android.wifi.recources
+adb.exe shell pm uninstall --user 0 com.samsung.android.wifi.softap.recources
+adb.exe shell pm uninstall --user 0 android.autoinstalls.config.samsung
+adb.exe shell pm uninstall --user 0 com.samsung.android.homemode
+adb.exe shell pm uninstall --user 0 com.samsung.android.livestickers
+adb.exe shell pm uninstall --user 0 com.google.android.apps.turbo
+adb.exe shell pm uninstall --user 0 com.google.android.as
+adb.exe shell pm uninstall --user 0 com.android.internal.display.cutout.emulation.double
+adb.exe shell pm uninstall --user 0 com.android.printspooler
+adb.exe shell pm uninstall --user 0 com.google.android.apps.tachyon
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.filled.themepicker
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.filled.launcher
+adb.exe shell pm uninstall --user 0 com.android.dreams.phototable
+adb.exe shell pm uninstall --user 0 com.sec.android.app.samsungapps
+adb.exe shell pm uninstall --user 0 com.samsung.android.game.gametools
+adb.exe shell pm uninstall --user 0 com.samsung.android.game.gamehome
+adb.exe shell pm uninstall --user 0 com.google.android.gm
+adb.exe shell pm uninstall --user 0 com.google.android.googlequicksearchbox
+adb.exe shell pm uninstall --user 0 com.google.android.syncadapters.calendar
+adb.exe shell pm uninstall --user 0 com.google.android.syncadapters.contacts
+adb.exe shell pm uninstall --user 0 com.google.android.gms.location.history
+adb.exe shell pm uninstall --user 0 com.android.hotwordenrollment.xgoogle
+adb.exe shell pm uninstall --user 0 com.android.hotwordenrollment.okgoogle
+adb.exe shell pm uninstall --user 0 com.google.android.onetimeinitializer
+adb.exe shell pm uninstall --user 0 com.google.android.partnersetup
+adb.exe shell pm uninstall --user 0 com.google.android.apps.carrier.carrierwifi
+adb.exe shell pm uninstall --user 0 com.android.theme.color.green 
+adb.exe shell pm uninstall --user 0 com.samsung.android.mobileservice
+adb.exe shell pm uninstall --user 0 com.samsung.android.dynamiclock
+adb.exe shell pm uninstall --user 0 com.hiya.star 
+adb.exe shell pm uninstall --user 0 com.android.internal.display.cutout.emulation.tall
+adb.exe shell pm uninstall --user 0 com.samsung.klmsagent
+adb.exe shell pm uninstall --user 0 com.samsung.android.knox.analytics.uploader
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.simplesharing
+adb.exe shell pm uninstall --user 0 com.samsung.android.service.livedrawing
+adb.exe shell pm uninstall --user 0 com.google.android.apps.maps
+adb.exe shell pm uninstall --user 0 com.samsung.android.mdx.quickboard
+adb.exe shell pm uninstall --user 0 com.samsung.android.mdx.kit
+adb.exe shell pm uninstall --user 0 com.samsung.android.mdx
+adb.exe shell pm uninstall --user 0 com.facebook.katana
+adb.exe shell pm uninstall --user 0 com.facebook.services
+adb.exe shell pm uninstall --user 0 com.facebook.system 
+adb.exe shell pm uninstall --user 0 com.facebook.appmanager
+adb.exe shell pm uninstall --user 0 com.netflix.mediaclient
+adb.exe shell pm uninstall --user 0 com.google.android.cellbroadcastreceiver
+adb.exe shell pm uninstall --user 0 com.google.android.cellbroadcastservice
+adb.exe shell pm uninstall --user 0 com.netflix.partner.activation
+adb.exe shell pm uninstall --user 0 com.android.theme.font.notoserifsource
+adb.exe shell pm uninstall --user 0 com.android.theme.color.ocean
+adb.exe shell pm uninstall --user 0 com.microsoft.skydrive
+adb.exe shell pm uninstall --user 0 com.microsoft.appmanager
+adb.exe shell pm uninstall --user 0 com.android.theme.color.orchid
+adb.exe shell pm uninstall --user 0 com.android.theme.icon.pebble
+adb.exe shell pm uninstall --user 0 com.samsung.android.service.peoplestripe
+adb.exe shell pm uninstall --user 0 com.google.android.printservice.recommendation
+adb.exe shell pm uninstall --user 0 com.android.theme.color.purple
+adb.exe shell pm uninstall --user 0 com.sec.android.app.ringtoneBR
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.rounded.launcher
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.rounded.systemui
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.rounded.themepicker
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.rounded.settings
+adb.exe shell pm uninstall --user 0 com.android.theme.icon_pack.rounded.android
+adb.exe shell pm uninstall --user 0 com.android.theme.icon.roundedrect
+adb.exe shell pm uninstall --user 0 com.samsung.android.svoiceime
+adb.exe shell pm uninstall --user 0 com.google.android.feedback
+adb.exe shell pm uninstall --user 0 com.samsung.android.smartswitchassistant
+adb.exe shell pm uninstall --user 0 com.osp.app.signin
+adb.exe shell pm uninstall --user 0 com.sec.android.desktopmode.uiservice
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.spage
+adb.exe shell pm uninstall --user 0 com.samsung.android.kidsinstaller
+adb.exe shell pm uninstall --user 0 com.sec.spp.push
+adb.exe shell pm uninstall --user 0 com.samsung.android.smartsuggestions
+adb.exe shell pm uninstall --user 0 com.samsung.android.sm.policy
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.cocktailbarservice
+adb.exe shell pm uninstall --user 0 com.samsung.android.appseparation
+adb.exe shell pm uninstall --user 0 com.sec.location.nfwlocationprivacy
+adb.exe shell pm uninstall --user 0 com.sec.android.app.setupwizardlegalprovider
+adb.exe shell pm uninstall --user 0 com.samsung.knox.securefolder
+adb.exe shell pm uninstall --user 0 com.samsung.android.fast
+adb.exe shell pm uninstall --user 0 com.samsung.android.location
+adb.exe shell pm uninstall --user 0 com.samsung.android.smartcallprovider
+adb.exe shell pm uninstall --user 0 com.sec.android.easyMover.Agent 
+adb.exe shell pm uninstall --user 0 com.samsung.android.service.stplatform
+adb.exe shell pm uninstall --user 0 com.samsung.android.smartmirroring
+adb.exe shell pm uninstall --user 0 com.android.theme.color.space
+adb.exe shell pm uninstall --user 0 com.google.android.tts
+adb.exe shell pm uninstall --user 0 com.samsung.android.service.aircommand
+adb.exe shell pm uninstall --user 0 com.android.theme.icon.squircle
+adb.exe shell pm uninstall --user 0 com.android.bips
+adb.exe shell pm uninstall --user 0 com.samsung.android.easysetup
+adb.exe shell pm uninstall --user 0 com.google.mainline.telemetry
+adb.exe shell pm uninstall --user 0 com.android.traceur
+adb.exe shell pm uninstall --user 0 com.samsung.desktopsystemui
+adb.exe shell pm uninstall --user 0 com.samsung.systemui.bixby2
+adb.exe shell pm uninstall --user 0 com.samsung.android.accessibility.talkback
+adb.exe shell pm uninstall --user 0 com.samsung.android.icecone
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.taskedge
+adb.exe shell pm uninstall --user 0 com.android.theme.icon.taperedrect
+adb.exe shell pm uninstall --user 0 com.android.theme.icon.teardrop
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.tips
+adb.exe shell pm uninstall --user 0 com.samsung.android.service.pentastic
+adb.exe shell pm uninstall --user 0 com.samsung.android.service.airviewdictionary
+adb.exe shell pm uninstall --user 0 de.axelspringer.yana.zeropage
+adb.exe shell pm uninstall --user 0 com.android.theme.icon.vessel
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.watchmanagerstub
+adb.exe shell pm uninstall --user 0 com.samsung.android.net.wifi.wifiguider
+adb.exe shell pm uninstall --user 0 com.diotek.sec.lookup.dictionary
+adb.exe shell pm uninstall --user 0 com.google.android.youtube
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.clipboardedge
+adb.exe shell pm uninstall --user 0 com.samsung.android.mdecservice
+adb.exe shell pm uninstall --user 0 com.sec.android.preloadinstaller
+adb.exe shell pm uninstall --user 0 com.android.internal.display.cutout.emulation.waterfall
+adb.exe shell pm uninstall --user 0 com.samsung.android.bixby.service 
+adb.exe shell pm uninstall --user 0 com.samsung.android.bixby.agent
+adb.exe shell pm uninstall --user 0 com.samsung.android.bixby.agent.dummy
+adb.exe shell pm uninstall --user 0 com.samsung.android.bixby.wakeup
+adb.exe shell pm uninstall --user 0 com.samsung.android.callbgprovider
+adb.exe shell pm uninstall --user 0 com.samsung.clipboardsaveservice
+adb.exe shell pm uninstall --user 0 com.android.wallpaperbackup
+adb.exe shell pm uninstall --user 0 com.sec.factory
+adb.exe shell pm uninstall --user 0 com.sec.android.diagmonagent
+adb.exe shell pm uninstall --user 0 com.android.dynsystem
+adb.exe shell pm uninstall --user 0 com.samsung.android.aircommandmanager
+adb.exe shell pm uninstall --user 0 com.sec.factory.camera
+adb.exe shell pm uninstall --user 0 com.samsung.android.fmm
+adb.exe shell pm uninstall --user 0 com.sec.android.app.fm
+adb.exe shell pm uninstall --user 0 com.samsung.android.themestore
+adb.exe shell pm uninstall --user 0 com.samsung.android.themecenter
+adb.exe shell pm uninstall --user 0 com.samsung.storyservice
+adb.exe shell pm uninstall --user 0 com.samsung.android.sm.devicesecurity
+adb.exe shell pm uninstall --user 0 com.samsung.gpuwatchapp
+adb.exe shell pm uninstall --user 0 com.samsung.android.providers.carrier
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.omcagent
+adb.exe shell pm uninstall --user 0 com.samsung.android.sdm.config
+adb.exe shell pm uninstall --user 0 com.samsung.android.allshare.service.fileshare
+adb.exe shell pm uninstall --user 0 com.samsung.android.allshare.service.mediashare
+adb.exe shell pm uninstall --user 0 com.samsung.android.rubin.app
+adb.exe shell pm uninstall --user 0 com.samsung.android.aware.service
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.sharelive
+adb.exe shell pm uninstall --user 0 com.samsung.android.scloud
+adb.exe shell pm uninstall --user 0 com.sec.android.app.desktoplauncher
+adb.exe shell pm uninstall --user 0 com.sec.android.app.SecSetupWizard
+adb.exe shell pm uninstall --user 0 com.sec.location.nsflp2
+adb.exe shell pm uninstall --user 0 com.samsung.SMT
+adb.exe shell pm uninstall --user 0 com.samsung.android.securitylogagent
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.settings.bixby
+adb.exe shell pm uninstall --user 0 com.samsung.android.shortcutbackupservice
+adb.exe shell pm uninstall --user 0 com.skms.android.agent
+adb.exe shell pm uninstall --user 0 com.samsung.android.beaconmanager
+adb.exe shell pm uninstall --user 0 com.sec.android.soagent
+adb.exe shell pm uninstall --user 0 com.wssyncmldm
+adb.exe shell pm uninstall --user 0 com.samsung.android.stickercenter
+adb.exe shell pm uninstall --user 0 com.sec.android.systemupdate
+adb.exe shell pm uninstall --user 0 com.sec.android.app.quicktool
+adb.exe shell pm uninstall --user 0 com.sec.android.app.wlantest
+adb.exe shell pm uninstall --user 0 com.samsung.android.aremoji
+adb.exe shell pm uninstall --user 0 com.samsung.android.aremojieditor
+adb.exe shell pm uninstall --user 0 com.sec.android.mimage.avatarstickers
+adb.exe shell pm uninstall --user 0 com.samsung.android.authfw
+adb.exe shell pm uninstall --user 0 com.samsung.android.samsungpass
+adb.exe shell pm uninstall --user 0 com.samsung.android.samsungpassautofill
+adb.exe shell pm uninstall --user 0 com.android.nfc 
+adb.exe shell pm uninstall --user 0 com.android.stk 
+adb.exe shell pm uninstall --user 0 com.android.stk2
+adb.exe shell pm uninstall --user 0 com.samsung.android.da.daagent 
+adb.exe shell pm uninstall --user 0 com.samsung.android.vtcamerasettings
+adb.exe shell pm uninstall --user 0 com.sec.android.app.apex
+adb.exe shell pm uninstall --user 0 com.samsung.android.ipsgeofence
+adb.exe shell pm uninstall --user 0 com.samsung.android.samsungpositioning
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.camera.sticker.facearavatar.preload 
+adb.exe shell pm uninstall --user 0 com.samsung.android.incall.contentprovider
+adb.exe shell pm uninstall --user 0 com.sec.unifiedwfc
+adb.exe shell pm uninstall --user 0 com.samsung.android.stickercenter
+adb.exe shell pm uninstall --user 0 com.samsung.android.visualars
+adb.exe shell pm uninstall --user 0 com.google.audio.hearing.visualization.accessibility.scribe
+adb.exe shell pm uninstall --user 0 com.google.android.projection.gearhead
+adb.exe shell pm uninstall --user 0 com.samsung.android.privateshare
+adb.exe shell pm uninstall --user 0 com.samsung.android.mateagent
+adb.exe shell cmd overlay enable com.android.theme.icon_pack.circular.android
+adb.exe shell cmd overlay enable com.android.theme.icon_pack.circular.settings
+adb.exe shell cmd overlay enable com.android.theme.icon_pack.circular.systemui
+adb.exe shell cmd overlay enable com.android.theme.color.black
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.routines
+adb.exe shell pm uninstall --user 0 com.samsung.android.service.tagservice
+adb.exe shell pm uninstall --user 0 com.android.apps.tag
+adb.exe shell pm uninstall --user 0 com.samsung.android.sdk.handwriting
+adb.exe shell pm uninstall --user 0 com.sec.android.app.magnifier
+adb.exe shell pm uninstall --user 0 com.sec.android.daemonapp
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.reminder
+adb.exe shell pm uninstall --user 0 com.sec.android.widgetapp.easymodecontactswidget
+adb.exe shell pm uninstall --user 0 com.google.android.apps.setupwizard.searchselector
+adb.exe shell pm uninstall --user 0 com.sec.android.app.ve.vebgm
+adb.exe shell pm uninstall --user 0 com.samsung.android.knox.containeragent
+adb.exe shell pm uninstall --user 0 com.samsung.android.knox.containercore
+adb.exe shell pm uninstall --user 0 com.android.managedprovisioning
+adb.exe shell pm uninstall --user 0 com.android.bookmarkprovider
+adb.exe shell pm uninstall --user 0 com.sec.epdgtestapp
+adb.exe shell pm uninstall --user 0 com.samsung.android.setting.multisound
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.smartcapture
+adb.exe shell pm uninstall --user 0 com.android.providers.userdictionary
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.ledbackcover
+adb.exe shell pm uninstall --user 0 com.samsung.android.forest
+adb.exe shell pm uninstall --user 0 com.sec.android.app.applinker
+adb.exe shell pm uninstall --user 0 com.samsung.adaptivebrightnessgo
+adb.exe shell pm uninstall --user 0 com.sec.bcservice
+adb.exe shell pm uninstall --user 0 com.sec.mhs.smarttethering
+adb.exe shell pm uninstall --user 0 com.samsung.android.networkdiagnostic
+adb.exe shell pm uninstall --user 0 com.samsung.android.sume.snn.service
+adb.exe shell pm uninstall --user 0 com.samsung.android.sume.nn.service
+adb.exe shell pm uninstall --user 0 com.samsung.android.tadownloader
+adb.exe shell pm uninstall --user 0 com.samsung.android.brightnessbackupservice
+adb.exe shell pm uninstall --user 0 com.samsung.android.server.wifi.mobilewips
+adb.exe shell pm uninstall --user 0 com.sem.factoryapp
+adb.exe shell pm uninstall --user 0 com.samsung.android.svcagent
+adb.exe shell pm uninstall --user 0 com.sec.automation
+adb.exe shell pm disable-user com.samsung.android.honeyboard
+adb.exe shell pm uninstall --user 0 com.sec.android.app.DataCreate
+adb.exe shell pm uninstall --user 0 com.samsung.android.messaging
+adb.exe shell pm uninstall --user 0 com.sec.android.easyonehand
+adb.exe shell pm uninstall --user 0 com.sec.android.app.safetyassurance
+adb.exe shell pm uninstall --user 0 com.sec.sve
+adb.exe shell pm uninstall --user 0 com.sec.android.app.personalization
+adb.exe shell pm uninstall --user 0 com.sec.android.app.bluetoothtest
+adb.exe shell pm uninstall --user 0 com.samsung.sec.android.application.csc
+adb.exe shell pm uninstall --user 0 com.samsung.android.bbc.bbcagent
+adb.exe shell pm uninstall --user 0 com.samsung.android.tapack.authfw
+adb.exe shell pm uninstall --user 0 com.sec.android.provider.badge
+adb.exe shell pm disable-user com.google.ar.core
+adb.exe shell pm uninstall --user 0 com.sec.android.provider.emergencymode
+adb.exe shell pm disable-user com.android.carrierdefaultapp
+adb.exe shell pm uninstall --user 0 com.android.emergency
+adb.exe shell pm uninstall --user 0 com.samsung.safetyinformation
+adb.exe shell pm uninstall --user 0 com.samsung.android.hdmapp
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.notes
+adb.exe shell pm uninstall --user 0 com.samsung.android.app.notes.addons
+adb.exe shell pm uninstall --user 0 com.android.vending
+adb.exe install apks\systemuituner.apk
+adb.exe shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
+adb.exe shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
+adb.exe shell pm grant com.zacharee1.systemuituner android.permission.DUMP
+adb.exe install apks\messages.apk
+adb.exe install apks\accounts.apk
+adb.exe install apks\keyboard.apk
+timeout 2
+adb.exe shell ime enable org.dslul.openboard.inputmethod.latin/.LatinIME
+adb.exe shell ime set org.dslul.openboard.inputmethod.latin/.LatinIME
+adb.exe install apks\browser.apk
+adb.exe install apks\store.apk
+adb.exe install apks\dns.apk
+adb.exe install apks\privacy.apk
+adb.exe install apks\calculator.apk
+adb.exe install apks\fdroidmodern.apk
+adb.exe shell settings put global window_animation_scale 0.75
+adb.exe shell settings put global transition_animation_scale 0.75
+adb.exe shell settings put global animator_duration_scale 0.75
+adb.exe install apks\weather.apk
+echo rebooting.
+adb.exe reboot
+timeout 5
