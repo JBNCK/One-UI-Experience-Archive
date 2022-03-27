@@ -1,6 +1,5 @@
 #!/usr/bin/sh
-echo Errors are normal, just ignore them
-echo -----------------------------------
+echo running script
 adb shell pm uninstall --user 0 com.samsung.aasaservice
 adb shell pm uninstall --user 0 com.google.android.setupwizard
 adb shell pm uninstall --user 0 com.google.android.apps.restore
