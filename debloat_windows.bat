@@ -1,4 +1,3 @@
-@echo off
 echo Errors are normal, just ignore them
 echo -----------------------------------
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.aasaservice
@@ -222,16 +221,12 @@ adb_win\adb.exe shell pm uninstall --user 0 com.google.audio.hearing.visualizati
 adb_win\adb.exe shell pm uninstall --user 0 com.google.android.projection.gearhead
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.privateshare
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.mateagent
-adb_win\adb.exe shell cmd overlay enable com.android.theme.icon_pack.circular.android
-adb_win\adb.exe shell cmd overlay enable com.android.theme.icon_pack.circular.settings
-adb_win\adb.exe shell cmd overlay enable com.android.theme.icon_pack.circular.systemui
-adb_win\adb.exe shell cmd overlay enable com.android.theme.color.black
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.routines
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.service.tagservice
 adb_win\adb.exe shell pm uninstall --user 0 com.android.apps.tag
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.sdk.handwriting
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.app.magnifier
-adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.daemonapp
+adb_win\adb.exe shell pm uninstall --user 0 com.android.vending
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.reminder
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.widgetapp.easymodecontactswidget
 adb_win\adb.exe shell pm uninstall --user 0 com.google.android.apps.setupwizard.searchselector
@@ -259,9 +254,7 @@ adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.server.wifi.mobi
 adb_win\adb.exe shell pm uninstall --user 0 com.sem.factoryapp
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.svcagent
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.automation
-adb_win\adb.exe shell pm disable-user com.samsung.android.honeyboard
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.app.DataCreate
-adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.messaging
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.easyonehand
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.app.safetyassurance
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.sve
@@ -273,33 +266,44 @@ adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.tapack.authfw
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.provider.badge
 adb_win\adb.exe shell pm disable-user com.google.ar.core
 adb_win\adb.exe shell pm uninstall --user 0 com.sec.android.provider.emergencymode
-adb_win\adb.exe shell pm disable-user com.android.carrierdefaultapp
+adb_win\adb.exe shell pm uninstall --user 0 com.android.carrierdefaultapp
 adb_win\adb.exe shell pm uninstall --user 0 com.android.emergency
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.safetyinformation
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.hdmapp
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.notes
 adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.notes.addons
-adb_win\adb.exe shell pm uninstall --user 0 com.android.vending
-adb_win\adb.exe install apks\systemuituner.apk
-adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
-adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
-adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.DUMP
-adb_win\adb.exe install apks\messages.apk
-adb_win\adb.exe install apks\accounts.apk
-adb_win\adb.exe install apks\keyboard.apk
-timeout 2
-adb_win\adb.exe shell ime enable org.dslul.openboard.inputmethod.latin/.LatinIME
-adb_win\adb.exe shell ime set org.dslul.openboard.inputmethod.latin/.LatinIME
-adb_win\adb.exe install apks\browser.apk
-adb_win\adb.exe install apks\store.apk
+adb_win\adb.exe shell pm uninstall --user 0 com.android.htmlviewer
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.updatecenter
+adb_win\adb.exe shell pm uninstall --user 0 com.google.android.as.oss
+adb_win\adb.exe shell pm uninstall --user 0 com.android.wallpaper.livepicker
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.tapack.authfw
+adb_win\adb.exe shell pm uninstall --user 0 com.android.cameraextensions
+adb_win\adb.exe shell pm uninstall --user 0 com.android.wallpapercropper
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.providers.factory
+adb_win\adb.exe shell pm uninstall --user 0 com.google.android.documentsui
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.gru 
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.singletake.service
+adb_win\adb.exe shell pm uninstall --user 0 com.sec.vsim.ericssonnsds.webapp
+adb_win\adb.exe shell pm uninstall --user 0 com.android.internal.systemui.onehanded.gestural
+adb_win\adb.exe shell pm uninstall --user 0 com.android.providers.downloads.ui 
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.app.dofviewer
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.mcfds
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.android.cidmanager
+adb_win\adb.exe shell pm uninstall --user 0 com.sec.app.RilErrorNotifier
+adb_win\adb.exe shell pm uninstall --user 0 com.samsung.rcs 
+adb_win\adb.exe shell pm uninstall --user 0 com.monotype.android.font.foundation
+adb_win\adb.exe shell pm uninstall --user 0 com.monotype.android.font.samsungone
+adb_win\adb.exe shell settings put global window_animation_scale 0.8
+adb_win\adb.exe shell settings put global transition_animation_scale 1.1
+adb_win\adb.exe shell settings put global animator_duration_scale 1.25
 adb_win\adb.exe install apks\dns.apk
-adb_win\adb.exe install apks\privacy.apk
-adb_win\adb.exe install apks\calculator.apk
-adb_win\adb.exe install apks\fdroidmodern.apk
-adb_win\adb.exe shell settings put global window_animation_scale 0.75
-adb_win\adb.exe shell settings put global transition_animation_scale 0.75
-adb_win\adb.exe shell settings put global animator_duration_scale 0.75
-adb_win\adb.exe install apks\weather.apk
+adb_win\adb.exe install apks\browser.apk
+adb_win\adb.exe install apks\systemuituner.apk
+adb_win\adb.exe install apks\store.apk
+TIMEOUT 1
+adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
+adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.DUMP
+adb_win\adb.exe shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
 echo rebooting.
 adb_win\adb.exe reboot
-timeout 5
+TIMEOUT 5

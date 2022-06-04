@@ -222,16 +222,12 @@ adb_lin/adb shell pm uninstall --user 0 com.google.audio.hearing.visualization.a
 adb_lin/adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.privateshare
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.mateagent
-adb_lin/adb shell cmd overlay enable com.android.theme.icon_pack.circular.android
-adb_lin/adb shell cmd overlay enable com.android.theme.icon_pack.circular.settings
-adb_lin/adb shell cmd overlay enable com.android.theme.icon_pack.circular.systemui
-adb_lin/adb shell cmd overlay enable com.android.theme.color.black
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.routines
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.service.tagservice
 adb_lin/adb shell pm uninstall --user 0 com.android.apps.tag
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.sdk.handwriting
 adb_lin/adb shell pm uninstall --user 0 com.sec.android.app.magnifier
-adb_lin/adb shell pm uninstall --user 0 com.sec.android.daemonapp
+adb_lin/adb shell pm uninstall --user 0 com.android.vending
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.reminder
 adb_lin/adb shell pm uninstall --user 0 com.sec.android.widgetapp.easymodecontactswidget
 adb_lin/adb shell pm uninstall --user 0 com.google.android.apps.setupwizard.searchselector
@@ -259,8 +255,6 @@ adb_lin/adb shell pm uninstall --user 0 com.samsung.android.server.wifi.mobilewi
 adb_lin/adb shell pm uninstall --user 0 com.sem.factoryapp
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.svcagent
 adb_lin/adb shell pm uninstall --user 0 com.sec.automation
-adb_lin/adb shell pm disable-user com.samsung.android.honeyboard
-adb_lin/adb shell pm uninstall --user 0 com.samsung.android.messaging
 adb_lin/adb shell pm uninstall --user 0 com.sec.android.app.DataCreate
 adb_lin/adb shell pm uninstall --user 0 com.sec.android.easyonehand
 adb_lin/adb shell pm uninstall --user 0 com.sec.android.app.safetyassurance
@@ -273,33 +267,44 @@ adb_lin/adb shell pm uninstall --user 0 com.samsung.android.tapack.authfw
 adb_lin/adb shell pm uninstall --user 0 com.sec.android.provider.badge
 adb_lin/adb shell pm disable-user com.google.ar.core
 adb_lin/adb shell pm uninstall --user 0 com.sec.android.provider.emergencymode
-adb_lin/adb shell pm disable-user com.android.carrierdefaultapp
+adb_lin/adb shell pm uninstall --user 0 com.android.carrierdefaultapp
 adb_lin/adb shell pm uninstall --user 0 com.android.emergency
 adb_lin/adb shell pm uninstall --user 0 com.samsung.safetyinformation
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.hdmapp
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.notes
 adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.notes.addons
-adb_lin/adb shell pm uninstall --user 0 com.android.vending
-adb_lin/adb install apks/systemuituner.apk
-adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
-adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
-adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.DUMP
-adb_lin/adb install apks/messages.apk
-adb_lin/adb install apks/accounts.apk
-adb_lin/adb install apks/keyboard.apk
-sleep 5
-adb_lin/adb shell ime enable org.dslul.openboard.inputmethod.latin/.LatinIME
-adb_lin/adb shell ime set org.dslul.openboard.inputmethod.latin/.LatinIME
-adb_lin/adb install apks/browser.apk
-adb_lin/adb install apks/store.apk
+adb_lin/adb shell pm uninstall --user 0 com.android.htmlviewer
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.updatecenter
+adb_lin/adb shell pm uninstall --user 0 com.google.android.as.oss
+adb_lin/adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.tapack.authfw
+adb_lin/adb shell pm uninstall --user 0 com.android.cameraextensions
+adb_lin/adb shell pm uninstall --user 0 com.android.wallpapercropper
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.providers.factory
+adb_lin/adb shell pm uninstall --user 0 com.google.android.documentsui
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.gru 
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.singletake.service
+adb_lin/adb shell pm uninstall --user 0 com.sec.vsim.ericssonnsds.webapp
+adb_lin/adb shell pm uninstall --user 0 com.android.internal.systemui.onehanded.gestural
+adb_lin/adb shell pm uninstall --user 0 com.android.providers.downloads.ui 
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.app.dofviewer
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.mcfds
+adb_lin/adb shell pm uninstall --user 0 com.samsung.android.cidmanager
+adb_lin/adb shell pm uninstall --user 0 com.sec.app.RilErrorNotifier
+adb_lin/adb shell pm uninstall --user 0 com.samsung.rcs 
+adb_lin/adb shell pm uninstall --user 0 com.monotype.android.font.foundation
+adb_lin/adb shell pm uninstall --user 0 com.monotype.android.font.samsungone
+adb_lin/adb shell settings put global window_animation_scale 0.8
+adb_lin/adb shell settings put global transition_animation_scale 1.1
+adb_lin/adb shell settings put global animator_duration_scale 1.25
 adb_lin/adb install apks/dns.apk
-adb_lin/adb install apks/privacy.apk
-adb_lin/adb install apks/calculator.apk
-adb_lin/adb install apks/fdroidmodern.apk
-adb_lin/adb shell settings put global window_animation_scale 0.75
-adb_lin/adb shell settings put global transition_animation_scale 0.75
-adb_lin/adb shell settings put global animator_duration_scale 0.75
-adb_lin/adb install apks/weather.apk
+adb_lin/adb install apks/browser.apk
+adb_lin/adb install apks/systemuituner.apk
+adb_lin/adb install apks/store.apk
+sleep 1
+adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
+adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.DUMP
+adb_lin/adb shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
 echo rebooting.
 adb_lin/adb reboot
 sleep 5

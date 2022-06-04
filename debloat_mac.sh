@@ -222,16 +222,12 @@ adb_mac/adb shell pm uninstall --user 0 com.google.audio.hearing.visualization.a
 adb_mac/adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.privateshare
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.mateagent
-adb_mac/adb shell cmd overlay enable com.android.theme.icon_pack.circular.android
-adb_mac/adb shell cmd overlay enable com.android.theme.icon_pack.circular.settings
-adb_mac/adb shell cmd overlay enable com.android.theme.icon_pack.circular.systemui
-adb_mac/adb shell cmd overlay enable com.android.theme.color.black
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.routines
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.service.tagservice
 adb_mac/adb shell pm uninstall --user 0 com.android.apps.tag
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.sdk.handwriting
 adb_mac/adb shell pm uninstall --user 0 com.sec.android.app.magnifier
-adb_mac/adb shell pm uninstall --user 0 com.sec.android.daemonapp
+adb_mac/adb shell pm uninstall --user 0 com.android.vending
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.reminder
 adb_mac/adb shell pm uninstall --user 0 com.sec.android.widgetapp.easymodecontactswidget
 adb_mac/adb shell pm uninstall --user 0 com.google.android.apps.setupwizard.searchselector
@@ -259,8 +255,6 @@ adb_mac/adb shell pm uninstall --user 0 com.samsung.android.server.wifi.mobilewi
 adb_mac/adb shell pm uninstall --user 0 com.sem.factoryapp
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.svcagent
 adb_mac/adb shell pm uninstall --user 0 com.sec.automation
-adb_mac/adb shell pm disable-user com.samsung.android.honeyboard
-adb_mac/adb shell pm uninstall --user 0 com.samsung.android.messaging
 adb_mac/adb shell pm uninstall --user 0 com.sec.android.app.DataCreate
 adb_mac/adb shell pm uninstall --user 0 com.sec.android.easyonehand
 adb_mac/adb shell pm uninstall --user 0 com.sec.android.app.safetyassurance
@@ -273,33 +267,44 @@ adb_mac/adb shell pm uninstall --user 0 com.samsung.android.tapack.authfw
 adb_mac/adb shell pm uninstall --user 0 com.sec.android.provider.badge
 adb_mac/adb shell pm disable-user com.google.ar.core
 adb_mac/adb shell pm uninstall --user 0 com.sec.android.provider.emergencymode
-adb_mac/adb shell pm disable-user com.android.carrierdefaultapp
+adb_mac/adb shell pm uninstall --user 0 com.android.carrierdefaultapp
 adb_mac/adb shell pm uninstall --user 0 com.android.emergency
 adb_mac/adb shell pm uninstall --user 0 com.samsung.safetyinformation
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.hdmapp
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.notes
 adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.notes.addons
-adb_mac/adb shell pm uninstall --user 0 com.android.vending
-adb_mac/adb install apks/systemuituner.apk
-adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
-adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
-adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.DUMP
-adb_mac/adb install apks/messages.apk
-adb_mac/adb install apks/accounts.apk
-adb_mac/adb install apks/keyboard.apk
-sleep 5
-adb_mac/adb shell ime enable org.dslul.openboard.inputmethod.latin/.LatinIME
-adb_mac/adb shell ime set org.dslul.openboard.inputmethod.latin/.LatinIME
-adb_mac/adb install apks/browser.apk
-adb_mac/adb install apks/store.apk
+adb_mac/adb shell pm uninstall --user 0 com.android.htmlviewer
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.updatecenter
+adb_mac/adb shell pm uninstall --user 0 com.google.android.as.oss
+adb_mac/adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.tapack.authfw
+adb_mac/adb shell pm uninstall --user 0 com.android.cameraextensions
+adb_mac/adb shell pm uninstall --user 0 com.android.wallpapercropper
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.providers.factory
+adb_mac/adb shell pm uninstall --user 0 com.google.android.documentsui
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.gru 
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.singletake.service
+adb_mac/adb shell pm uninstall --user 0 com.sec.vsim.ericssonnsds.webapp
+adb_mac/adb shell pm uninstall --user 0 com.android.internal.systemui.onehanded.gestural
+adb_mac/adb shell pm uninstall --user 0 com.android.providers.downloads.ui 
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.app.dofviewer
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.mcfds
+adb_mac/adb shell pm uninstall --user 0 com.samsung.android.cidmanager
+adb_mac/adb shell pm uninstall --user 0 com.sec.app.RilErrorNotifier
+adb_mac/adb shell pm uninstall --user 0 com.samsung.rcs 
+adb_mac/adb shell pm uninstall --user 0 com.monotype.android.font.foundation
+adb_mac/adb shell pm uninstall --user 0 com.monotype.android.font.samsungone
+adb_mac/adb shell settings put global window_animation_scale 0.8
+adb_mac/adb shell settings put global transition_animation_scale 1.1
+adb_mac/adb shell settings put global animator_duration_scale 1.25
 adb_mac/adb install apks/dns.apk
-adb_mac/adb install apks/privacy.apk
-adb_mac/adb install apks/calculator.apk
-adb_mac/adb install apks/fdroidmodern.apk
-adb_mac/adb shell settings put global window_animation_scale 0.75
-adb_mac/adb shell settings put global transition_animation_scale 0.75
-adb_mac/adb shell settings put global animator_duration_scale 0.75
-adb_mac/adb install apks/weather.apk
+adb_mac/adb install apks/browser.apk
+adb_mac/adb install apks/systemuituner.apk
+adb_mac/adb install apks/store.apk
+sleep 1
+adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.WRITE_SECURE_SETTINGS
+adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.DUMP
+adb_mac/adb shell pm grant com.zacharee1.systemuituner android.permission.PACKAGE_USAGE_STATS
 echo rebooting.
 adb_mac/adb reboot
 sleep 5
